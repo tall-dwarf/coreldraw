@@ -1,0 +1,70 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: 'Gotham Pro', sans-serif
+
+img
+    max-width: 100%
+
+button
+    cursor: pointer
+
+@mixin font($size, $weight, $color, $height)
+    font-size: $size
+    font-weight: $weight
+    color: $color
+    line-height: $height
+
+.normal-text
+    @include font(22px, 400, #fff, 140%)
+    
+
+.page-wrapper
+    background: rgb(175, 175, 175)
+
+.container
+    max-width: 1151px
+    margin: 0 auto
+
+.header
+    background: linear-gradient(132.59deg, rgb(158, 11, 55) 0.982%,rgb(255, 197, 49) 72.223%,rgb(158, 11, 55) 99.953%)
+    padding: 31px 0px 29px
+    &-inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-menu
+        display: flex
+        gap: 43px
+
+.nav
+    display: flex
+    gap: 72px
+    &-link
+        @include font(16px, 400, #fff, 20px)
+        text-decoration: none
+        font-family: 'Abel', sans-serif
+        display: flex
+        align-items: flex-end
+        gap: 4px
+        &__icon
+            width: 12px
+            height: 100%
+            transform: translateY(-25%)
+
+.btn
+    &-transparent
+        @include font(16px, 400, #fff, 150%)
+        background-color: transparent
+        border: 0px
+
+    &-red
+        @include font(17px, 400, #fff, 16px)
+        padding: 24px 25px
+        border-radius: 40px
+        box-shadow: inset 4px 4px 6px 0px rgba(255, 255, 255, 0.5),4px 4px 20px 0px rgba(223, 80, 23, 0.8)
+        background: rgba(158, 11, 55, 0.7)
+        width: 100%
+        max-width: 160px
+        border: none
