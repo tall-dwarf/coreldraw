@@ -27,11 +27,12 @@ button {
 .container {
   max-width: 1151px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .header {
   background: linear-gradient(132.59deg, rgb(158, 11, 55) 0.982%, rgb(255, 197, 49) 72.223%, rgb(158, 11, 55) 99.953%);
-  padding: 31px 0px 29px;
+  padding: 15px 0px;
 }
 .header-inner {
   display: flex;
@@ -84,4 +85,33 @@ button {
   width: 100%;
   max-width: 160px;
   border: none;
+}
+
+.main {
+  height: 650px;
+  background: linear-gradient(140.19deg, rgb(223, 80, 23) 2.56%, rgba(223, 80, 23, 0.44) 10.647%, rgba(223, 80, 23, 0.19) 22.487%, rgba(223, 80, 23, 0) 39.303%), linear-gradient(90deg, rgb(40, 37, 51) 55.153%, rgb(40, 37, 51) 55.156%, rgba(40, 37, 51, 0.74) 62.213%, rgba(40, 37, 51, 0) 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main__title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.main-content {
+  flex: 1 1 auto;
+}
+.main-content-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.main-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }/*# sourceMappingURL=index.css.map */
