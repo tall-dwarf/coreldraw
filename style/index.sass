@@ -4,6 +4,9 @@
     margin: 0
     font-family: 'Gotham Pro', sans-serif
 
+body
+    background-color: rgb(23, 20, 34)
+
 img
     max-width: 100%
 
@@ -18,13 +21,12 @@ button
 
 .normal-text
     @include font(22px, 400, #fff, 140%)
-    
 
 .page-wrapper
     background: rgb(175, 175, 175)
 
 .container
-    max-width: 1151px
+    max-width: 1420px
     margin: 0 auto
     height: 100%
 
@@ -55,6 +57,17 @@ button
             transform: translateY(-25%)
 
 .btn
+    &-icon
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        border: 0px
+        display: flex
+        align-items: center
+        justify-content: center
+        &-yellow
+            box-shadow: inset 1.91px 1.91px 2.87px 0px rgba(255, 255, 255, 0.5),1.91px 1.91px 9.57px 0px rgb(223, 80, 23)
+            background: linear-gradient(131.76deg, rgb(223, 80, 23) -2.3%,rgb(249, 203, 116) 104.391%)
     &-transparent
         @include font(16px, 400, #fff, 150%)
         background-color: transparent
@@ -90,3 +103,65 @@ button
         top: 0
         right: 0
         z-index: -1
+
+.design
+    padding: 100px 0px 80px
+    &__alert
+        margin-bottom: 60px
+    &-inner
+        display: flex
+        gap: 20px
+    &-content
+        flex: 1 1 auto
+    &-sidebar
+        flex: 0 0 220px
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+.info-item
+    position: relative
+    height: 220px
+    width: 220px
+    border-radius: 20px
+    overflow: hidden
+    &__title
+        @include font($size: 9px, $weight: 700, $color: #fff, $height: 140%)
+    &__subtitle
+        @include font($size: 13px, $weight: bold, $color: #fff, $height: 140%)
+        
+    &__bg
+        background: linear-gradient(180.00deg, rgba(23, 20, 34, 0.5),rgba(23, 20, 34, 0.9) 55.172%)
+        position: absolute
+        z-index: 1
+        bottom: 0
+        left: 0
+        right: 0
+        top: 50%
+    &__info
+        flex: 1 1 auto
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__content
+        position: absolute
+        z-index: 2
+        bottom: 14px
+        // padding: 60px 0px 14px
+        display: flex
+        left: 6px
+        right: 6px
+        border: 1px solid #fff
+        border-radius: 20px
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.alert
+    padding: 40px 40px
+    width: 100%
+    border-radius: 30px
+    
+    &-red
+        background: linear-gradient(135.00deg, rgb(255, 164, 98) 0%,rgb(180, 83, 80) 21.793%,rgb(138, 38, 69) 48.927%,rgb(41, 23, 37) 84.552%)

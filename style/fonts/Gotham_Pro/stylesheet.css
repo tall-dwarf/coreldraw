@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Gotham Pro';
     src: url('GothamPro-Bold.eot');
     src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
@@ -8,9 +8,9 @@
         url('GothamPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-} */
+}
 
-/* @font-face {
+@font-face {
     font-family: 'Gotham Pro';
     src: url('GothamPro-Light.eot');
     src: local('Gotham Pro Light'), local('GothamPro-Light'),
@@ -20,7 +20,7 @@
         url('GothamPro-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-} */
+}
 
 /* @font-face {
     font-family: 'Gotham Pro';
@@ -82,7 +82,7 @@
     font-style: italic;
 } */
 
-/* @font-face {
+@font-face {
     font-family: 'Gotham Pro';
     src: url('GothamPro.eot');
     src: local('Gotham Pro'), local('GothamPro'),
@@ -92,7 +92,7 @@
         url('GothamPro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 /* @font-face {
     font-family: 'Gotham Pro';
