@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/fonts/Gotham_Pro/stylesheet.css">
     <link rel="stylesheet" href="./style/fonts/Abel/stylesheet.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
 <body>
     <!-- <div class="page-wrapper"> -->
-        <main class="main">
-            <img class="main-bg" src="./images/main-bg.jpeg" alt="картинка в главном блоке">
-            <header class="header">
-                <div class="container">
-                    <div class="header-inner">
-                        <nav class="nav">
-                            <a class="nav-link" href="/">
-                                <span class="nav-link__text">Направления</span>
-                                <img class="nav-link__icon" src="./images/icon/next.svg" alt="Иконка">
-                            </a>
-                            <a class="nav-link" href="/">
-                                <span class="nav-link__text">Портфолио</span>
-                            </a>
-                            <a class="nav-link" href="/">
-                                <span class="nav-link__text">Контакты</span>
-                            </a>
-                        </nav>
-                        <div class="header-menu">
-                            <button class="btn-transparent">Войти</button>
-                            <button class="btn-red">Регистрация</button>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <div class="main-content">
-                <div class="container">
-                    <div class="main-content-inner">
-                        <h1 class="main__title normal-text">почему мы не используем coreldraw</h1>
+    <main class="main">
+        <img class="main-bg" src="./images/main-bg.jpeg" alt="картинка в главном блоке">
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <nav class="nav">
+                        <a class="nav-link" href="/">
+                            <span class="nav-link__text">Направления</span>
+                            <img class="nav-link__icon" src="./images/icon/next.svg" alt="Иконка">
+                        </a>
+                        <a class="nav-link" href="/">
+                            <span class="nav-link__text">Портфолио</span>
+                        </a>
+                        <a class="nav-link" href="/">
+                            <span class="nav-link__text">Контакты</span>
+                        </a>
+                    </nav>
+                    <div class="header-menu">
+                        <button class="btn-transparent">Войти</button>
+                        <button class="btn-red">Регистрация</button>
                     </div>
                 </div>
             </div>
-        </main>
+        </header>
 
-        <section class="design">
+        <div class="main-content">
             <div class="container">
-                <div class="design-inner">
-                    <div class="design-content">
-                        <div class="design__alert alert alert-red normal-text">
-                            В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw. Давайте разберем, почему именно Adobe стал нашим надежным союзником в творчестве.
-                        </div>
-                        <!-- <ul class="mumber-list">
+                <div class="main-content-inner">
+                    <h1 class="main__title normal-text">почему мы не используем coreldraw</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="design">
+        <div class="container">
+            <div class="design-inner">
+                <div class="design-content">
+                    <div class="design__alert alert alert-red normal-text">
+                        В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw. Давайте
+                        разберем, почему именно Adobe стал нашим надежным союзником в творчестве.
+                    </div>
+                    <ul class="mumber-list">
                             <li class="mumber-item">
                                 <div class="mumber-item-value">1</div>
                                 <div class="mumber-item-content">
@@ -62,69 +65,169 @@
                                     </div>
                                 </div>
                             </li>   
-                        </ul> -->
+                        </ul>
+                </div>
+                <div class="design-sidebar">
+                    <div class="info-item">
+                        <img class="info-item__img" src="./images/info/1.jpeg" alt="Картинка">
+                        <div class="info-item__bg"></div>
+                        <div class="info-item__content">
+                            <div class="info-item__info">
+                                <h3 class="info-item__title">почему мы не используем</h3>
+                                <h4 class="info-item__subtitle">CorelDraw</h4>
+                            </div>
+                            <button class="btn-icon btn-icon-yellow">
+                                <img src="./images/icon/line.svg" alt="Стрелочка далее">
+                            </button>
+                        </div>
                     </div>
-                    <div class="design-sidebar">
-                        <div class="info-item">
-                            <img class="info-item__img" src="./images/info/1.jpeg" alt="Картинка">
-                            <div class="info-item__bg"></div>
-                            <div class="info-item__content">
-                                <div class="info-item__info">
-                                    <h3 class="info-item__title">почему мы не используем</h3>
-                                    <h4 class="info-item__subtitle">CorelDraw</h4>
-                                </div>
-                                <button class="btn-icon btn-icon-yellow">
-                                    <img src="./images/icon/line.svg" alt="Стрелочка далее">
-                                </button>
+                    <div class="info-item">
+                        <img class="info-item__img" src="./images/info/2.jpeg" alt="Картинка">
+                        <div class="info-item__bg"></div>
+                        <div class="info-item__content">
+                            <div class="info-item__info">
+                                <h3 class="info-item__title">в команде Creat работают</h3>
+                                <h4 class="info-item__subtitle">только лучшие</h4>
                             </div>
+                            <button class="btn-icon btn-icon-yellow">
+                                <img src="./images/icon/line.svg" alt="Стрелочка далее">
+                            </button>
                         </div>
-                        <div class="info-item">
-                            <img class="info-item__img" src="./images/info/2.jpeg" alt="Картинка">
-                            <div class="info-item__bg"></div>
-                            <div class="info-item__content">
-                                <div class="info-item__info">
-                                    <h3 class="info-item__title">в команде Creat работают</h3>
-                                    <h4 class="info-item__subtitle">только лучшие</h4>
-                                </div>
-                                <button class="btn-icon btn-icon-yellow">
-                                    <img src="./images/icon/line.svg" alt="Стрелочка далее">
-                                </button>
+                    </div>
+                    <div class="info-item">
+                        <img class="info-item__img" src="./images/info/3.jpeg" alt="Картинка">
+                        <div class="info-item__bg"></div>
+                        <div class="info-item__content">
+                            <div class="info-item__info">
+                                <h3 class="info-item__title">откуда мы черпаем идеи</h3>
+                                <h4 class="info-item__subtitle">для дизайна</h4>
                             </div>
+                            <button class="btn-icon btn-icon-yellow">
+                                <img src="./images/icon/line.svg" alt="Стрелочка далее">
+                            </button>
                         </div>
-                        <div class="info-item">
-                            <img class="info-item__img" src="./images/info/3.jpeg" alt="Картинка">
-                            <div class="info-item__bg"></div>
-                            <div class="info-item__content">
-                                <div class="info-item__info">
-                                    <h3 class="info-item__title">откуда мы черпаем идеи</h3>
-                                    <h4 class="info-item__subtitle">для дизайна</h4>
-                                </div>
-                                <button class="btn-icon btn-icon-yellow">
-                                    <img src="./images/icon/line.svg" alt="Стрелочка далее">
-                                </button>
+                    </div>
+                    <div class="info-item">
+                        <img class="info-item__img" src="./images/info/2.jpeg" alt="Картинка">
+                        <div class="info-item__bg"></div>
+                        <div class="info-item__content">
+                            <div class="info-item__info">
+                                <h3 class="info-item__title">в команде Creat работают</h3>
+                                <h4 class="info-item__subtitle">только лучшие</h4>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <img class="info-item__img" src="./images/info/2.jpeg" alt="Картинка">
-                            <div class="info-item__bg"></div>
-                            <div class="info-item__content">
-                                <div class="info-item__info">
-                                    <h3 class="info-item__title">в команде Creat работают</h3>
-                                    <h4 class="info-item__subtitle">только лучшие</h4>
-                                </div>
-                                <button class="btn-icon btn-icon-yellow">
-                                    <img src="./images/icon/line.svg" alt="Стрелочка далее">
-                                </button>
-                            </div>
+                            <button class="btn-icon btn-icon-yellow">
+                                <img src="./images/icon/line.svg" alt="Стрелочка далее">
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
-    <!-- </div> -->
-    
+    <div id="swipper1" class="swiper fill-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/slider/1.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/2.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/3.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/4.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/5.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/6.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/7.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/8.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/9.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/10.png" alt="Картинка">
+            </div>
+        </div>
+    </div>
+
+    <div id="swipper2" class="swiper fill-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/slider/2.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/1.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/7.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/3.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/10.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/4.png" alt="Картинка">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/slider/6.png" alt="Картинка">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/slider/8.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/5.png" alt="Картинка">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/slider/9.png" alt="Картинка">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('#swipper1', {
+            slidesPerView: 4.5,
+            allowTouchMove: false,
+
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+            },
+
+            spaceBetween: 20,
+        });
+
+        const swiper2 = new Swiper('#swipper2', {
+            slidesPerView: 4.5,
+            allowTouchMove: false,
+
+            autoplay: {
+                delay: 700,
+                disableOnInteraction: false,
+            },
+
+            spaceBetween: 20,
+        });
+
+    </script>
 </body>
+
 </html>

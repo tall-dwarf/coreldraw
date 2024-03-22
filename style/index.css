@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(23, 20, 34);
+  padding-bottom: 244px;
 }
 
 img {
@@ -209,4 +210,8 @@ button {
 }
 .alert-red {
   background: linear-gradient(135deg, rgb(255, 164, 98) 0%, rgb(180, 83, 80) 21.793%, rgb(138, 38, 69) 48.927%, rgb(41, 23, 37) 84.552%);
+}
+
+.fill-slider ~ .fill-slider {
+  margin-top: 20px;
 }/*# sourceMappingURL=index.css.map */
