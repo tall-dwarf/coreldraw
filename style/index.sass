@@ -22,6 +22,8 @@ button
 
 .normal-text
     @include font(22px, 400, #fff, 140%)
+    & + &
+        margin-top: 16px
 
 .page-wrapper
     background: rgb(175, 175, 175)
@@ -107,6 +109,12 @@ button
 
 .design
     padding: 100px 0px 80px
+    &__number-item
+        margin-top: 28px
+    &__knowledge
+        margin-bottom: 80px
+    &__text
+        margin-top: 40px
     &__alert
         margin-bottom: 60px
     &-inner
@@ -130,7 +138,7 @@ button
         @include font($size: 9px, $weight: 700, $color: #fff, $height: 140%)
     &__subtitle
         @include font($size: 13px, $weight: bold, $color: #fff, $height: 140%)
-        
+
     &__bg
         background: linear-gradient(180.00deg, rgba(23, 20, 34, 0.5),rgba(23, 20, 34, 0.9) 55.172%)
         position: absolute
@@ -163,12 +171,108 @@ button
     padding: 40px 40px
     width: 100%
     border-radius: 30px
-    
+
     &-red
         background: linear-gradient(135.00deg, rgb(255, 164, 98) 0%,rgb(180, 83, 80) 21.793%,rgb(138, 38, 69) 48.927%,rgb(41, 23, 37) 84.552%)
 
+.number-item
+    display: flex
+    gap: 30px
+    align-items: flex-start
+    &-value
+        @include font($size: 183px, $weight: 700, $color: #fff, $height: 80%)
+        background: linear-gradient(177deg, rgba(126,32,59,1) 30%, rgba(23, 20, 34, 0.1) 85%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-transform: uppercase
+    &__company-icons
+        margin-top: 40px
+    &__corel-draw
+        margin-top: 40px
 
-
-.fill-slider 
+.fill-slider
     & ~ .fill-slider
         margin-top: 20px
+
+.company-icons
+    display: inline-flex
+    flex-direction: column
+    max-width: 885px
+    &__subtitle
+        display: block
+        margin-top: 20px
+        @include font($size: 18px, $weight: 400, $color: #fff, $height: 140%)
+        text-align: right
+        
+    &-list
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 40px
+    &-item
+        flex: 1 1 50%
+        max-width: 268px
+        height: 62px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #fff
+        border-radius: 10px
+
+.corel-draw
+    display: flex
+    gap: 80px
+    width: 100%
+    align-items: flex-start
+    justify-content: center
+    &__left
+        transform: rotate(-5deg)
+    &__right
+        transform: rotate(5deg)
+
+.knowledge
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-top: 140px
+    position: relative
+    &__circle
+        position: absolute
+        top: 60px
+        left: 58%
+        &::after, &::before
+            z-index: 2
+            content: ''
+            position: absolute
+            width: 130px
+            height: 67px
+            background-size: contain
+        &::after
+            bottom: -20px
+            right: 120%
+            background: url('../images/line-bottom-left.png') center no-repeat
+        &::before
+            bottom: -20px
+            left: 120%
+            background: url('../images/line-bottom-right.png') center no-repeat
+
+    &-item
+        &__circle
+            margin: 0 auto
+            z-index: 1
+            position: relative
+            transform: translateY(10px)
+    &-list
+        align-items: flex-end
+        display: flex
+        gap: 18px
+
+.circle
+    width: 97px
+    height: 97px
+    padding: 22px
+    border-radius: 50%
+
+    &-white
+        box-shadow: inset -4px -4px 6px 0px rgba(255, 255, 255, 0.5),-3px -3px 20px 0px rgba(255, 255, 255, 0.18),10px 10px 20px 0px rgba(0, 0, 0, 0.8)
+        background: linear-gradient(147.75deg, rgb(255, 255, 255) 30.803%,rgb(193, 192, 196) 57.129%,rgb(134, 132, 141) 72.924%,rgb(52, 49, 64) 82.702%)
